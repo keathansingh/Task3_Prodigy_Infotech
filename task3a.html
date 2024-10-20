@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <div class="result" id="result"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const resultElement = document.getElementById('result');
+            const result = localStorage.getItem('result');
+            resultElement.textContent = result;
+            resultElement.style.display = 'flex';
+        });
+    </script>
+</body>
+</html>
